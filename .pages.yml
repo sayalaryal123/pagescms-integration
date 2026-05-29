@@ -1,0 +1,22 @@
+# .pages.yml
+media:
+  input: public/images
+  output: /images
+
+collections:
+  - name: posts
+    label: Blog Posts
+    path: content/posts
+    type: collection
+    layout: entries
+    format: md
+    fields:
+      - name: title
+        label: Title
+        type: text
+      - name: date
+        label: Publish Date
+        type: date
+      - name: body
+        label: Content Body
+        type: rich-text
